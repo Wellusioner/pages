@@ -116,22 +116,29 @@ main{
 .partner-box{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   background-color: #fff;
   box-shadow: 0 20 50px rgba(0,0,0, 0.05);
   border-radius: 10px;
   margin-bottom: 40px;
+  overflow: hidden;
 }
 
-
+.partner-item{
+  width: 25%;
+}
 
 .nav-section nav ul{
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+/*  justify-content: space-around;*/
   padding: 15px;
   background-color: var(--blur-color);
   border-radius: 6px;
 }
-
+.nav-section nav ul li{
+  width: 25%;
+}
 .nav-section nav ul li a{
   color: #fff;
   text-transform: uppercase;
@@ -147,4 +154,28 @@ main{
 
 .footer-text{
   color: #BDB9B9;
+}
+
+
+@media (max-width: 767px){
+  .partner-item{
+    width: 50%;
+  }
+  .nav-section nav ul{
+    padding-bottom: 0;
+  }
+  .nav-section nav ul li{
+    width: 50%;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 575px){
+  .partner-item{
+    width: 100%;
+  }
+  
+  .nav-section nav ul li{
+    width: 100%;
+  }
 }
