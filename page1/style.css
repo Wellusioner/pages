@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+:root{
+  --blur-color: #2d4fe3;
+}
+
+body{
+  background-color: #edebe9;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #5D5D5D;
+}
+
+*{
+  text-decoration: none;
+  list-style: none;
+}
+
+ol, ul{
+  padding: 0;
+  margin: 0;
+}
+
+.d-inline-block{
+  display: inline-block;
+}
+.text-main{
+  color: var(--blur-color);
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+
+.fw-300{
+  font-weight: 300;
+}
+.fw-500{
+  font-weight: 500;
+}
+.fw-400{
+  font-weight: 400;
+}
+.fw-600{
+  font-weight: 600;
+}
+
+.custom-container{
+  max-width: 1440px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 0 auto;
+  width: auto;
+}
+main{
+  margin-top: 115px;
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #edebe9;
+}
+.header .nav{
+  min-height: 115px;
+}
+.custom-title{
+  font-size: 50px;
+  color: #222222;
+}
+.sub-title{
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.box{
+/*  box-shadow: 0 30px 70px rgba(0,0,0, 0.05);*/
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  font-size: 22px;
+  background-color: #f1f1f1;
+  margin-bottom: 40px;
+}
+
+.play-video{
+  display: inline-block;
+  background-color: #EA7034;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+
+.partner-section{
+  margin-bottom: 40px;
+}
+.partner-title{
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.partner-box{
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0 20 50px rgba(0,0,0, 0.05);
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+
+
+.nav-section nav ul{
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  background-color: var(--blur-color);
+  border-radius: 6px;
+}
+
+.nav-section nav ul li a{
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: block;
+  padding: 5px 10px;
+}
+
+.footer-block{
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.footer-text{
+  color: #BDB9B9;
+}
