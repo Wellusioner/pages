@@ -13,6 +13,7 @@ body{
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   color: #5D5D5D;
+  padding-top: 10px;
 }
 
 *{
@@ -84,12 +85,11 @@ ol, ul{
 }
 
 .box{
-/*  box-shadow: 0 30px 70px rgba(0,0,0, 0.05);*/
-  border-radius: 12px;
-  padding: 15px 12px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  padding: 12px 0;
   text-align: center;
   font-size: 22px;
-  background-color: #f1f1f1;
   margin-bottom: 40px;
 }
 
@@ -116,20 +116,28 @@ ol, ul{
 }
 
 .partner-box{
+  text-align: center;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  background-color: #fff;
-  box-shadow: 0 20 50px rgba(0,0,0, 0.05);
-  border-radius: 10px;
   margin-bottom: 40px;
-  overflow: hidden;
+  background-color: #fff;
 }
 
 .partner-item{
+  display: inline-block;
   width: 25%;
+  text-align: center;
 }
-
+.partner-item img{
+  vertical-align: middle;
+  max-width: 100%;
+  display: inline-block;
+  height: auto;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+}
 
 /*About page style start*/
 
@@ -317,6 +325,16 @@ ol, ul{
   .sub-title{
     font-size: 22px;
   }
+  
+  .partner-box{
+    display: block;
+    background-color: transparent;
+  }
+
+  .partner-item{
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 575px){
